@@ -1,0 +1,18 @@
+{
+  "from": "Central de Ajuda <nao-responda@helpdesk.local>",
+  "to": "diego@cliente.local",
+  "subject": "Chamado #43d9045b recebido — Erro ao emitir nota fiscal",
+  "text": "Olá Diego Alves,\n\nRecebemos seu chamado \"Erro ao emitir nota fiscal\" (prioridade ALTA).\nEle já foi atribuído a Bruno Lima, que vai te atender em breve.\n\nEquipe de Suporte",
+  "html": "<p>Olá Diego Alves,</p><p>Recebemos seu chamado <strong>\"Erro ao emitir nota fiscal\"</strong> (prioridade ALTA).</p><p>Ele já foi atribuído a <strong>Bruno Lima</strong>, que vai te atender em breve.</p><p>Equipe de Suporte</p>",
+  "enviadoEm": "2026-08-06T21:36:16.031Z",
+  "info": {
+    "envelope": {
+      "from": "nao-responda@helpdesk.local",
+      "to": [
+        "diego@cliente.local"
+      ]
+    },
+    "messageId": "<ce645853-408a-7d42-879d-2b65f5099ee7@helpdesk.local>",
+    "message": "{\"from\":{\"address\":\"nao-responda@helpdesk.local\",\"name\":\"Central de Ajuda\"},\"to\":[{\"address\":\"diego@cliente.local\",\"name\":\"\"}],\"subject\":\"Chamado #43d9045b recebido — Erro ao emitir nota fiscal\",\"text\":\"Olá Diego Alves,\\n\\nRecebemos seu chamado \\\"Erro ao emitir nota fiscal\\\" (prioridade ALTA).\\nEle já foi atribuído a Bruno Lima, que vai te atender em breve.\\n\\nEquipe de Suporte\",\"html\":\"<p>Olá Diego Alves,</p><p>Recebemos seu chamado <strong>\\\"Erro ao emitir nota fiscal\\\"</strong> (prioridade ALTA).</p><p>Ele já foi atribuído a <strong>Bruno Lima</strong>, que vai te atender em breve.</p><p>Equipe de Suporte</p>\",\"headers\":{},\"messageId\":\"<ce645853-408a-7d42-879d-2b65f5099ee7@helpdesk.local>\"}"
+  }
+}

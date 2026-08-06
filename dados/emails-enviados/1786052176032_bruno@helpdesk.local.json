@@ -1,0 +1,18 @@
+{
+  "from": "Central de Ajuda <nao-responda@helpdesk.local>",
+  "to": "bruno@helpdesk.local",
+  "subject": "Novo chamado atribuído a você — Erro ao emitir nota fiscal",
+  "text": "Olá Bruno Lima,\n\nUm novo chamado foi atribuído a você:\n\n\"Erro ao emitir nota fiscal\" (prioridade ALTA)\nCliente: Diego Alves\n\nAo emitir a nota fiscal o sistema trava e nao gera o PDF final.",
+  "html": "<p>Olá Bruno Lima,</p><p>Um novo chamado foi atribuído a você:</p><p><strong>Erro ao emitir nota fiscal</strong> (prioridade ALTA)<br/>Cliente: Diego Alves</p><p>Ao emitir a nota fiscal o sistema trava e nao gera o PDF final.</p>",
+  "enviadoEm": "2026-08-06T21:36:16.032Z",
+  "info": {
+    "envelope": {
+      "from": "nao-responda@helpdesk.local",
+      "to": [
+        "bruno@helpdesk.local"
+      ]
+    },
+    "messageId": "<bc766385-0640-513b-f4cb-0e8be8e819d9@helpdesk.local>",
+    "message": "{\"from\":{\"address\":\"nao-responda@helpdesk.local\",\"name\":\"Central de Ajuda\"},\"to\":[{\"address\":\"bruno@helpdesk.local\",\"name\":\"\"}],\"subject\":\"Novo chamado atribuído a você — Erro ao emitir nota fiscal\",\"text\":\"Olá Bruno Lima,\\n\\nUm novo chamado foi atribuído a você:\\n\\n\\\"Erro ao emitir nota fiscal\\\" (prioridade ALTA)\\nCliente: Diego Alves\\n\\nAo emitir a nota fiscal o sistema trava e nao gera o PDF final.\",\"html\":\"<p>Olá Bruno Lima,</p><p>Um novo chamado foi atribuído a você:</p><p><strong>Erro ao emitir nota fiscal</strong> (prioridade ALTA)<br/>Cliente: Diego Alves</p><p>Ao emitir a nota fiscal o sistema trava e nao gera o PDF final.</p>\",\"headers\":{},\"messageId\":\"<bc766385-0640-513b-f4cb-0e8be8e819d9@helpdesk.local>\"}"
+  }
+}

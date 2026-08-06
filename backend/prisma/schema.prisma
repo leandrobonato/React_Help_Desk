@@ -1,0 +1,86 @@
+// Sem `enum` nativo do Prisma de propósito: papel/status/prioridade ficam
+// como String, validados em src/utils/constantes.js + Zod. Isso permite
+// rodar a mesma schema contra SQLite (verificação local rápida) ou
+// PostgreSQL (entrega final) sem alterações — só trocando o provider.
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Usuario {
+  id        String   @id @default(uuid())
+  nome      String
+  email     String   @unique
+  senhaHash String
+  papel     String   @default("CLIENTE") // CLIENTE | ATENDENTE | ADMIN
+  ativo     Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  ticketsComoCliente   Ticket[]          @relation("ClienteTickets")
+  ticketsComoAtendente Ticket[]          @relation("AtendenteTickets")
+  comentarios          Comentario[]
+  historico            HistoricoTicket[]
+
+  @@index([papel])
+}
+
+model Ticket {
+  id          String    @id @default(uuid())
+  titulo      String
+  descricao   String
+  prioridade  String    @default("MEDIA") // BAIXA | MEDIA | ALTA
+  status      String    @default("ABERTO") // ABERTO | EM_ATENDIMENTO | FECHADO
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  fechadoEm   DateTime?
+
+  clienteId   String
+  cliente     Usuario   @relation("ClienteTickets", fields: [clienteId], references: [id])
+
+  atendenteId String?
+  atendente   Usuario?  @relation("AtendenteTickets", fields: [atendenteId], references: [id])
+
+  comentarios Comentario[]
+  historico   HistoricoTicket[]
+
+  @@index([status])
+  @@index([prioridade])
+  @@index([clienteId])
+  @@index([atendenteId])
+}
+
+model Comentario {
+  id        String   @id @default(uuid())
+  mensagem  String
+  createdAt DateTime @default(now())
+
+  ticketId String
+  ticket   Ticket @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+
+  autorId String
+  autor   Usuario @relation(fields: [autorId], references: [id])
+
+  @@index([ticketId])
+}
+
+// Trilha de auditoria: criação, mudança de status, atribuição/reatribuição.
+// Só escrita pela camada de serviço (nunca exposta para edição via API).
+model HistoricoTicket {
+  id            String   @id @default(uuid())
+  tipo          String   // CRIADO | STATUS_ALTERADO | ATRIBUIDO | REATRIBUIDO
+  valorAnterior String?
+  valorNovo     String?
+  createdAt     DateTime @default(now())
+
+  ticketId String
+  ticket   Ticket @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+
+  autorId String?
+  autor   Usuario? @relation(fields: [autorId], references: [id])
+
+  @@index([ticketId])
+}

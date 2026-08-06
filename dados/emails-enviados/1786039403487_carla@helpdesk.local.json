@@ -1,0 +1,18 @@
+{
+  "from": "Central de Ajuda <nao-responda@helpdesk.local>",
+  "to": "carla@helpdesk.local",
+  "subject": "Novo chamado atribuído a você — Impressora nao funciona",
+  "text": "Olá Carla Nunes,\n\nUm novo chamado foi atribuído a você:\n\n\"Impressora nao funciona\" (prioridade ALTA)\nCliente: Diego Alves\n\nA impressora do setor financeiro nao liga desde ontem.",
+  "html": "<p>Olá Carla Nunes,</p><p>Um novo chamado foi atribuído a você:</p><p><strong>Impressora nao funciona</strong> (prioridade ALTA)<br/>Cliente: Diego Alves</p><p>A impressora do setor financeiro nao liga desde ontem.</p>",
+  "enviadoEm": "2026-08-06T18:03:23.487Z",
+  "info": {
+    "envelope": {
+      "from": "nao-responda@helpdesk.local",
+      "to": [
+        "carla@helpdesk.local"
+      ]
+    },
+    "messageId": "<557366e1-fac3-9ccc-9697-d5afd9eb5ac7@helpdesk.local>",
+    "message": "{\"from\":{\"address\":\"nao-responda@helpdesk.local\",\"name\":\"Central de Ajuda\"},\"to\":[{\"address\":\"carla@helpdesk.local\",\"name\":\"\"}],\"subject\":\"Novo chamado atribuído a você — Impressora nao funciona\",\"text\":\"Olá Carla Nunes,\\n\\nUm novo chamado foi atribuído a você:\\n\\n\\\"Impressora nao funciona\\\" (prioridade ALTA)\\nCliente: Diego Alves\\n\\nA impressora do setor financeiro nao liga desde ontem.\",\"html\":\"<p>Olá Carla Nunes,</p><p>Um novo chamado foi atribuído a você:</p><p><strong>Impressora nao funciona</strong> (prioridade ALTA)<br/>Cliente: Diego Alves</p><p>A impressora do setor financeiro nao liga desde ontem.</p>\",\"headers\":{},\"messageId\":\"<557366e1-fac3-9ccc-9697-d5afd9eb5ac7@helpdesk.local>\"}"
+  }
+}

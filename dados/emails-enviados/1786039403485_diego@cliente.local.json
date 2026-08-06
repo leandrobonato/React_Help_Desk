@@ -1,0 +1,18 @@
+{
+  "from": "Central de Ajuda <nao-responda@helpdesk.local>",
+  "to": "diego@cliente.local",
+  "subject": "Chamado #812881e4 recebido — Impressora nao funciona",
+  "text": "Olá Diego Alves,\n\nRecebemos seu chamado \"Impressora nao funciona\" (prioridade ALTA).\nEle já foi atribuído a Carla Nunes, que vai te atender em breve.\n\nEquipe de Suporte",
+  "html": "<p>Olá Diego Alves,</p><p>Recebemos seu chamado <strong>\"Impressora nao funciona\"</strong> (prioridade ALTA).</p><p>Ele já foi atribuído a <strong>Carla Nunes</strong>, que vai te atender em breve.</p><p>Equipe de Suporte</p>",
+  "enviadoEm": "2026-08-06T18:03:23.486Z",
+  "info": {
+    "envelope": {
+      "from": "nao-responda@helpdesk.local",
+      "to": [
+        "diego@cliente.local"
+      ]
+    },
+    "messageId": "<b8ea4aef-05a4-611d-996a-6c4997186f63@helpdesk.local>",
+    "message": "{\"from\":{\"address\":\"nao-responda@helpdesk.local\",\"name\":\"Central de Ajuda\"},\"to\":[{\"address\":\"diego@cliente.local\",\"name\":\"\"}],\"subject\":\"Chamado #812881e4 recebido — Impressora nao funciona\",\"text\":\"Olá Diego Alves,\\n\\nRecebemos seu chamado \\\"Impressora nao funciona\\\" (prioridade ALTA).\\nEle já foi atribuído a Carla Nunes, que vai te atender em breve.\\n\\nEquipe de Suporte\",\"html\":\"<p>Olá Diego Alves,</p><p>Recebemos seu chamado <strong>\\\"Impressora nao funciona\\\"</strong> (prioridade ALTA).</p><p>Ele já foi atribuído a <strong>Carla Nunes</strong>, que vai te atender em breve.</p><p>Equipe de Suporte</p>\",\"headers\":{},\"messageId\":\"<b8ea4aef-05a4-611d-996a-6c4997186f63@helpdesk.local>\"}"
+  }
+}
